@@ -41,8 +41,8 @@ const config: HardhatUserConfig = {
     // },
     // mumbai: {
     //   chainId: 80001,
-    //   url: `${process.env.MUMBAI_RPC_URL}`,
-    //   accounts: [`0x${process.env.MUMBAI_PRIVATE_KEY}`],
+    //   url: `https://polygon-mumbai-pokt.nodies.app`,
+    //   accounts: [`0x`],
     // },
     // amoy: {
     //   chainId: 80002,
@@ -89,15 +89,38 @@ const config: HardhatUserConfig = {
     //     },
     //   },
     // },
-    localhost: {
-      url: "http://127.0.0.1:8545",
-      accounts: {
-        mnemonic: DEFAULT_MNEMONIC,
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 20,
-      },
-    },
+    // localhost: {
+    //   url: "http://127.0.0.1:8545",
+    //   accounts: {
+    //     mnemonic: DEFAULT_MNEMONIC,
+    //     path: "m/44'/60'/0'/0",
+    //     initialIndex: 0,
+    //     count: 20,
+    //   },
+    // },
+    //https://sepolia.drpc.org
+    // avaFuji: {
+    //   url: "https://api.avax-test.network/ext/bc/C/rpc",
+    //   chainId: 43113,
+    //   accounts: ["0x"],
+    // },
+    //https://rpc.sepolia.org
+    // sepolia: {
+    //   url: "https://ethereum-sepolia-rpc.publicnode.com",
+    //   chainId: 11155111,
+    //   accounts: ["0x"],
+    // },
+    // arbSepolia: {
+    //   url: "https://sepolia-rollup.arbitrum.io/rpc",
+    //   chainId: 421614,
+    //   accounts: ["0x"],
+    // },
+    //https://sepolia.optimism.io
+    // opSepolia: {
+    //   url: "https://optimism-sepolia.blockpi.network/v1/rpc/public",
+    //   chainId: 11155420,
+    //   accounts: ["0x"],
+    // },
   },
   gasReporter: {
     currency: "USD",
